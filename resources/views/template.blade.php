@@ -24,13 +24,13 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 1</a>
+                        <a class="nav-link active" href="/nilaikuliah">PR 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 2</a>
+                        <a class="nav-link active" href="/keranjang-belanja">PR2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PR 3</a>
+                        <a class="nav-link active" href="/siswa">PR3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>
