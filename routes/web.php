@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\KeranjangBelanjaDBController;
+use App\Http\Controllers\KertasHVSController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,6 +28,10 @@ Route::get('pert5', function () {
 
 Route::get('news', function () {
 	return view('news');
+});
+
+Route::get('responsive', function () {
+	return view('responsive');
 });
 
 Route::get('5026241056', function () {
@@ -77,3 +82,12 @@ Route::get('/keranjang-belanja', [KeranjangBelanjaDBController::class, 'index'])
 Route::get('/keranjang-belanja/beli', [KeranjangBelanjaDBController::class, 'beli']);
 Route::post('/keranjang-belanja/store', [KeranjangBelanjaDBController::class, 'store']);
 Route::get('/keranjang-belanja/batal/{id}', [KeranjangBelanjaDBController::class, 'batal']);
+
+//Route CRUD Kertas HVS
+Route::get('/kertashvs', [KertasHVSController::class, 'index']);
+Route::get('/kertashvs/create', [KertasHVSController::class, 'create']);
+Route::post('/kertashvs/store', [KertasHVSController::class, 'store']);
+Route::get('/kertashvs/edit/{kodekertashvs}', [KertasHVSController::class, 'edit']);
+Route::post('/kertashvs/update', [KertasHVSController::class, 'update']);
+Route::get('/kertashvs/delete/{kodekertashvs}', [KertasHVSController::class, 'delete']);
+

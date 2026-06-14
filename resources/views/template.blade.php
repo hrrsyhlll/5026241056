@@ -33,6 +33,9 @@
                         <a class="nav-link active" href="/siswa">PR3</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="/kertashvs">Kertas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>
                     </li>
 
