@@ -9,6 +9,7 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\KeranjangBelanjaDBController;
 use App\Http\Controllers\KertasHVSController;
+use App\Http\Controllers\TagihanAirController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -91,3 +92,7 @@ Route::get('/kertashvs/edit/{kodekertashvs}', [KertasHVSController::class, 'edit
 Route::post('/kertashvs/update', [KertasHVSController::class, 'update']);
 Route::get('/kertashvs/delete/{kodekertashvs}', [KertasHVSController::class, 'delete']);
 
+//Router CRUD Tagihan Air
+Route::get('/eas', [TagihanAirController::class, 'index']);
+Route::get('/eas/create', [TagihanAirController::class, 'create']);
+Route::post('/eas/store', [TagihanAirController::class, 'store']);
